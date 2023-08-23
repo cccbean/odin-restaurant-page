@@ -1,0 +1,120 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* MEYER RESET */
+#content {
+  height: 100vh;
+  display: grid;
+  grid-template: min-content 1fr / 1fr;
+}
+
+.header {
+  background-color: #333333;
+  color: #ffc0cb;
+  padding: 32px;
+  display: grid;
+  gap: 8px;
+  grid-template: 1fr / repeat(2, 1fr);
+}
+
+.logo {
+  font-size: 2rem;
+  justify-self: start;
+  display: grid;
+  gap: 8px;
+  grid-template: 1fr / min-content 1fr;
+  align-items: center;
+}
+
+.logo img {
+  width: 3rem;
+  height: auto;
+}
+
+.header ul {
+  font-size: 1rem;
+  justify-self: end;
+  display: grid;
+  gap: 32px;
+  grid-template: 1fr / repeat(3, 1fr);
+  align-items: center;
+}
+
+.header button {
+  font: inherit;
+  color: inherit;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;  
+}
+
+.page {
+  background-image: url("./bean_background.avif");
+  background-size: cover;
+  display: grid;
+  padding: 0px 32px 32px 32px; 
+}
+
+.container {
+  background-color: white;
+  padding: 64px;
+  display: grid;
+  gap: 32px;
+  grid-auto-rows: min-content;
+  place-items: center;
+}
+
+.container img {
+  width: 256px;
+  height: auto;
+}
+
+.container .para {
+  display: grid;
+  gap: 16px;
+}
